@@ -18,7 +18,7 @@ export default createGlobalStyle`
     font-family: "Poppins", sans-serif;
     color: #fff;
     background-color: #8B96A7;
-    padding: 2rem 2rem;
+    padding: 2rem 4rem;
     box-sizing: border-box;
     overflow: hidden;
   }
@@ -30,9 +30,37 @@ h1 {
   text-shadow: -2px 2px 0px #E76A46;
   line-height: 3.5rem;
   }
-  p {
+p {
   font-size: 1.7rem;
   font-weight: 200;
   line-height: 2.4rem;
   }
+input {
+  font-family: "Poppins", sans-serif;
+  color: #FFFFFF;
+  width: 100%;
+  height: 48px;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  background-color: inherit;
+  padding: 1rem;
+}
+textarea {
+  font-family: "Poppins", sans-serif;
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  background-color: inherit;
+  padding: 1rem;
+  resize: none;
+}  
+::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: white;
+  opacity: .7;
+}
 `;

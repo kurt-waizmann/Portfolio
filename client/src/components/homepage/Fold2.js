@@ -19,4 +19,5 @@ export default Fold2
 
 const Details = styled.p`
   line-height: 34px;
+  margin-top: 2rem;
 `

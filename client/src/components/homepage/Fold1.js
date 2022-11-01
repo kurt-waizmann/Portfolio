@@ -43,13 +43,11 @@ const Wrapper = styled.div`
 const TextWrap = styled.div`
   width: 60%;
   width: 25.7rem;
-  margin-top: 3.5rem;
 `
 const Title = styled.div`
   color: #4C5272;
   font-size: 3.4rem;
   font-weight: 700;
-  margin-top: 1.5rem;
   margin-bottom: 1rem;
   text-shadow: -2px 2px 0px #E76A46;
   line-height: 3.5rem;
