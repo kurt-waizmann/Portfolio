@@ -13,7 +13,7 @@ import Arrow from "../../assets/arrow.svg"
 const Fold4 = () => {
   return (
     <>
-      <h1>Reach out & say hi.</h1>
+      <h1>Reach Out and Say Hi</h1>
       <Form>
         <img src={Smile} style={{ width: "120px" }} />
         <input type="text" id="name" name="name" placeholder="Name" />

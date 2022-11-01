@@ -2,7 +2,8 @@
 import styled from 'styled-components'
 
 //import components
-import Projects from "../Projects"
+import Projects from '../Projects'
+// import { projectInfo } from '../info'
 
 const Fold3 = () => {
   return (
