@@ -23,6 +23,8 @@ const LogoWrapper = styled.div`
     position: relative;
 `
 const ImageDoor = styled.img`
+width: 88px;
+height: 130px;
 `
 const ImageName = styled.img`
     position: absolute;

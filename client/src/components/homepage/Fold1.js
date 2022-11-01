@@ -13,14 +13,16 @@ const Fold1 = () => {
   return (
     <Wrapper>
       <MenuButton />
-      <LogoWrapper>
-        <Logo />
-      </LogoWrapper>
       <TextWrap>
+        <Logo />
         <Title>
-          <Job>Full Stack Web Dev</Job>
+          <div>Full Stack</div>
+          <div>Web Dev</div>
         </Title>
-        <Subtext>Hi, I’m Kurt. I’m a web developer located In Montreal, Quebec. On the lookout for new opportunities.</Subtext>
+        <Subtext>
+          <p>Hi, I’m Kurt. I’m a web developer located In Montreal, Quebec.</p>
+          <Lookout>On the lookout for new opportunities.</Lookout>
+        </Subtext>
       </TextWrap>
       <PicWrapper>
         <ZigZag1 src={Zig} />
@@ -38,30 +40,27 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
 `
-
-const LogoWrapper = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 4rem;
-`
 const TextWrap = styled.div`
   width: 60%;
+  width: 25.7rem;
+  margin-top: 3.5rem;
 `
 const Title = styled.div`
+  color: #4C5272;
   font-size: 3.4rem;
-  font-weight: 100;
+  font-weight: 700;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
-  letter-spacing: 0.1em;
-`
-const Job = styled.div`
-  color: #4C5272;
+  text-shadow: -2px 2px 0px #E76A46;
+  line-height: 3.5rem;
 `
 const Subtext = styled.p`
   font-size: 1.7rem;
-  font-weight: 100;
-  line-height: 2.2rem;
+  font-weight: 200;
+  line-height: 2.4rem;
+`
+const Lookout = styled.p`
+  margin-top: 10px;
 `
 const PicWrapper = styled.div`
   display: flex;

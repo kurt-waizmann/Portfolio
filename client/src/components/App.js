@@ -1,3 +1,6 @@
+// import packages
+import styled from 'styled-components'
+
 // component imports
 import GlobalStyles from "./GlobalStyles";
 import Fold1 from "./homepage/Fold1";
@@ -8,10 +11,13 @@ import Fold4 from "./homepage/Fold4";
 const App = () => {
   return (
     <>
-      <GlobalStyles/>
+      <GlobalStyles />
       <Fold1 />
+      <Divider />
       <Fold2 />
+      <Divider />
       <Fold3 />
+      <Divider />
       <Fold4 />
     </>
   );
@@ -19,3 +25,6 @@ const App = () => {
 
 export default App;
 
+const Divider = styled.hr`
+  margin: 6rem 0px;
+`

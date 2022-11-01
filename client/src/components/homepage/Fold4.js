@@ -1,8 +1,11 @@
-import React from 'react'
+import Smile from "../../assets/smile.svg"
 
 const Fold4 = () => {
   return (
-    <div>Fold4</div>
+    <>
+    <h1>Reach out & say hi.</h1>
+    <img src={Smile} />
+    </>
   )
 }
 
