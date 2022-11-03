@@ -26,9 +26,9 @@ const Fold1 = () => {
         </Subtext>
       </TextWrap>
       <PicWrapper>
-        <ZigZag1 src={Zig} />
+        <ZigZag1 src={Zig} alt="zigzag decoration"/>
         <Portrait />
-        <ZigZag2 src={Zag} />
+        <ZigZag2 src={Zag} alt="zigzag decoration"/>
       </PicWrapper>
     </Wrapper>
   )

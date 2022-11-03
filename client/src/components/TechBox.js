@@ -26,6 +26,9 @@ const TechBox = ({ tech }) => {
                     case "express.js":
                         color = "#F63402"
                         break;
+                    default:
+                        color = "white"
+                        break;
                 }
                 return <Box key={uuid()} color={color}>{tek}</Box>
             })

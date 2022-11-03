@@ -16,14 +16,14 @@ const Fold4 = () => {
       <Title>Reach Out and Say Hi</Title>
       <FormWrap>
       <Form>
-        <img src={Smile} style={{ width: "120px", margin: "1rem 0px" }} />
+        <img src={Smile} alt="smiley face" style={{ width: "120px", margin: "1rem 0px" }} />
         <input type="text" id="name" name="name" placeholder="Name" />
         <input type="text" id="email" name="email" placeholder="E-mail" />
         <textarea id="message" name="message" placeholder="Message" style={{ height: "200px" }} />
         <Icons>
           <Links>
-            <a href="https://www.linkedin.com/in/kurt-waizmann"><img src={GitHub} /></a>
-            <a href="https://github.com/kurt-waizmann"><img src={LinkedIn} /></a>
+            <a href="https://www.linkedin.com/in/kurt-waizmann"><img src={GitHub} alt="LinkedIn Link"/></a>
+            <a href="https://github.com/kurt-waizmann"><img src={LinkedIn} alt="GitHub Link" /></a>
           </Links>
           <Submit type="submit" value="Send" />
         </Icons>
@@ -33,10 +33,10 @@ const Fold4 = () => {
           <div>© 2022 Kurt Waizmann</div>
           <MTL>
             <div>Made in Montreal</div>
-            <img src={Montreal} />
+            <img src={Montreal} alt="Montreal logo" />
           </MTL>
           <BackTop>
-            <img src={Arrow} />
+            <img src={Arrow} alt="Navigation arrow" />
           </BackTop>
         </FinePrint>
     </>

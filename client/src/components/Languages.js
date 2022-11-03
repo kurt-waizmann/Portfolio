@@ -22,7 +22,7 @@ const Languages = () => {
             {languages.map(pic => {
                 return (
                 <Box key={uuid()}>
-                    <Image src={pic} />
+                    <Image src={pic} alt="technologies" />
                     <Shadow/>
                 </Box>
                 )

@@ -8,7 +8,7 @@ import Picture from '../assets/portrait.png'
 const Portrait = () => {
   return (
     <PortraitWrap>
-      <Pic src={Picture} />
+      <Pic src={Picture} alt="photo of Kurt" />
       <Circle />
     </PortraitWrap>
   )
