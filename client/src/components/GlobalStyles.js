@@ -18,7 +18,7 @@ export default createGlobalStyle`
     font-family: "Poppins", sans-serif;
     color: #fff;
     background-color: #8B96A7;
-    padding: 2rem 4rem;
+    padding: 2rem 4rem 1rem;
     box-sizing: border-box;
     overflow: hidden;
   }

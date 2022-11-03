@@ -12,40 +12,57 @@ import Arrow from "../../assets/arrow.svg"
 
 const Fold4 = () => {
   return (
-    <>
-      <Title>Reach Out and Say Hi</Title>
+    <Wrap>
+      <TitleWrap>
+        <Title>Reach Out and Say Hi</Title>
+        <ImgWrap>
+          <img src={Smile} alt="smiley face" style={{ width: "120px", margin: "1rem 0px" }} />
+        </ImgWrap>
+      </TitleWrap>
       <FormWrap>
-      <Form>
-        <img src={Smile} alt="smiley face" style={{ width: "120px", margin: "1rem 0px" }} />
-        <input type="text" id="name" name="name" placeholder="Name" />
-        <input type="text" id="email" name="email" placeholder="E-mail" />
-        <textarea id="message" name="message" placeholder="Message" style={{ height: "200px" }} />
-        <Icons>
-          <Links>
-            <a href="https://www.linkedin.com/in/kurt-waizmann"><img src={GitHub} alt="LinkedIn Link"/></a>
-            <a href="https://github.com/kurt-waizmann"><img src={LinkedIn} alt="GitHub Link" /></a>
-          </Links>
-          <Submit type="submit" value="Send" />
-        </Icons>
-      </Form>
+        <Form name="contact" method="POST" data-netlify="true">
+          <input type="text" id="name" name="name" placeholder="Name" />
+          <input type="email" id="email" name="email" placeholder="E-mail" />
+          <textarea id="message" name="message" placeholder="Message" style={{ height: "200px" }} />
+          <Icons>
+            <Links>
+              <a href="https://www.linkedin.com/in/kurt-waizmann"><img src={GitHub} alt="LinkedIn Link" /></a>
+              <a href="https://github.com/kurt-waizmann"><img src={LinkedIn} alt="GitHub Link" /></a>
+            </Links>
+            <Submit type="submit" value="Send" />
+          </Icons>
+        </Form>
       </FormWrap>
-        <FinePrint>
-          <div>© 2022 Kurt Waizmann</div>
-          <MTL>
-            <div>Made in Montreal</div>
-            <img src={Montreal} alt="Montreal logo" />
-          </MTL>
-          <BackTop>
-            <img src={Arrow} alt="Navigation arrow" />
-          </BackTop>
-        </FinePrint>
-    </>
+      <FinePrint>
+        <div>© 2022 Kurt Waizmann</div>
+        <MTL>
+          <div>Made in Montreal</div>
+          <img src={Montreal} alt="Montreal logo" />
+        </MTL>
+        <BackTop>
+          <img src={Arrow} alt="Navigation arrow" />
+        </BackTop>
+      </FinePrint>
+    </Wrap>
   )
 }
 
 export default Fold4
 
+const Wrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+const TitleWrap = styled.div`
+`
 const Title = styled.h1`
+`
+const ImgWrap = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
 `
 const FormWrap = styled.div`
   display: flex;
@@ -81,17 +98,17 @@ const Links = styled.div`
 
 const FinePrint = styled.div`
   margin-top: 2rem;
-  position: absolute;
+  /* position: absolute; */
   left: 0px;
   width: 100vw;
-  height: 5rem;
+  height: 4rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   border-top: 1px solid white;
   justify-content: space-between;
-  padding: 1rem;
-  opacity: .5;
+  padding: 1rem 1rem 0px;
+  opacity: .8;
 `
 const MTL = styled.div`
   display: flex;
@@ -99,7 +116,7 @@ const MTL = styled.div`
   align-items: center;
   gap: .5rem;
 `
-const BackTop =styled.div`
+const BackTop = styled.div`
   width: 3.5rem;
   height: 3.5rem;
   border: 1px solid #E5E0DE;

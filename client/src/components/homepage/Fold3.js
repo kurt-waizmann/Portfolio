@@ -11,9 +11,11 @@ import { projectInfo } from '../info'
 
 const Fold3 = () => {
   return (
-    <>
-      <h1>Things I've Made</h1>
-      <Wrapper>
+    <Wrapper>
+      <TextWrap>
+        <h1>Things I've Made</h1>
+      </TextWrap>
+      <div>
         {
           projectInfo.map(project => {
             return <Projects
@@ -27,8 +29,9 @@ const Fold3 = () => {
             />
           })
         }
-      </Wrapper>
-    </>
+      </div>
+    </Wrapper>
+
   )
 }
 
@@ -39,5 +42,8 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+`
+const TextWrap = styled.div`
   width: 100%;
 `
