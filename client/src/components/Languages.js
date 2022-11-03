@@ -41,6 +41,7 @@ const Wrapper = styled.div`
     align-items: center;
     justify-content: center;
     margin: 5rem 0px;
+    max-width: 35rem;
 `
 const Box = styled.div`
     width: 81.29px;

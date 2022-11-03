@@ -42,8 +42,7 @@ const Wrapper = styled.div`
   align-items: center;
 `
 const TextWrap = styled.div`
-  width: 60%;
-  width: 25.7rem;
+  max-width: 25.7rem;
 `
 const Title = styled.div`
   color: #4C5272;

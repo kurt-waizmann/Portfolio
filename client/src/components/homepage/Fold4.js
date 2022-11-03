@@ -14,6 +14,7 @@ const Fold4 = () => {
   return (
     <>
       <Title>Reach Out and Say Hi</Title>
+      <FormWrap>
       <Form>
         <img src={Smile} style={{ width: "120px", margin: "1rem 0px" }} />
         <input type="text" id="name" name="name" placeholder="Name" />
@@ -27,6 +28,7 @@ const Fold4 = () => {
           <Submit type="submit" value="Send" />
         </Icons>
       </Form>
+      </FormWrap>
         <FinePrint>
           <div>© 2022 Kurt Waizmann</div>
           <MTL>
@@ -45,7 +47,11 @@ export default Fold4
 
 const Title = styled.h1`
 `
-
+const FormWrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
 const Form = styled.form`
   display: flex;
   flex-direction: column;

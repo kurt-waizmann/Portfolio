@@ -44,6 +44,7 @@ input {
   border-radius: 10px;
   background-color: inherit;
   padding: 1rem;
+  max-width: 350px ;
 }
 textarea {
   font-family: "Poppins", sans-serif;
@@ -55,6 +56,7 @@ textarea {
   background-color: inherit;
   padding: 1rem;
   resize: none;
+  max-width: 350px ;
 }  
 ::placeholder {
   font-family: "Poppins", sans-serif;

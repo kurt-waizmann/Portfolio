@@ -56,7 +56,7 @@ const Wrapper = styled.div`
 const ImgWrap = styled.div`
   display: flex;
   justify-content: center;
-  height: 16rem;
+  height: 20rem;
   background-image: url(${prop => prop.pic});
   background-position: top;
   background-size: cover;
