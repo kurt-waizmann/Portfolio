@@ -1,5 +1,7 @@
 // import packages
 import styled from 'styled-components'
+import { v4 as uuid } from 'uuid';
+
 
 //import components
 import Projects from '../Projects'
@@ -8,7 +10,6 @@ import Projects from '../Projects'
 import { projectInfo } from '../info'
 
 const Fold3 = () => {
-  console.log("Fold 3 info", projectInfo)
   return (
     <>
       <h1>Things I've Made</h1>
@@ -16,6 +17,7 @@ const Fold3 = () => {
         {
           projectInfo.map(project => {
             return <Projects
+              key={uuid()}
               name={project.name}
               pic={project.pic}
               github={project.github}

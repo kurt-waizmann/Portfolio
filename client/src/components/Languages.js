@@ -1,5 +1,6 @@
 // import packages
 import styled from 'styled-components'
+import { v4 as uuid } from 'uuid';
 
 //import images
 import css from "../assets/code-logos/css3.png"
@@ -20,12 +21,10 @@ const Languages = () => {
         <Wrapper>
             {languages.map(pic => {
                 return (
-                    <>
-                <Box>
+                <Box key={uuid()}>
                     <Image src={pic} />
                     <Shadow/>
                 </Box>
-                </>
                 )
             })}
     </Wrapper>

@@ -6,7 +6,7 @@ import BodyBreak from "../assets/bodybreak.png"
 
 export const projectInfo = [
     {
-        name: "After",
+        name: "After.",
         pic: After,
         github: "https://github.com/kurt-waizmann/After",
         website: "https://jointheafter.life/",
@@ -17,7 +17,7 @@ export const projectInfo = [
         name: "Body Break",
         pic: BodyBreak,
         github: "https://github.com/kurt-waizmann/Body-Break",
-        website: "https://jointheafter.life/",
+        website: "",
         tech: ["react", "javascript", "node.js", "mongodb", "express.js"],
         detail: "E-commerce website for sportswear and sportswear adjacent products. Includes predictive searches, responsive shopping cart, adding purchases/users to database.",
     }

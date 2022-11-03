@@ -53,7 +53,7 @@ const Title = styled.div`
   text-shadow: -2px 2px 0px #E76A46;
   line-height: 3.5rem;
 `
-const Subtext = styled.p`
+const Subtext = styled.div`
   font-size: 1.7rem;
   font-weight: 200;
   line-height: 2.4rem;

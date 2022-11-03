@@ -13,9 +13,9 @@ import Arrow from "../../assets/arrow.svg"
 const Fold4 = () => {
   return (
     <>
-      <h1>Reach Out and Say Hi</h1>
+      <Title>Reach Out and Say Hi</Title>
       <Form>
-        <img src={Smile} style={{ width: "120px" }} />
+        <img src={Smile} style={{ width: "120px", margin: "1rem 0px" }} />
         <input type="text" id="name" name="name" placeholder="Name" />
         <input type="text" id="email" name="email" placeholder="E-mail" />
         <textarea id="message" name="message" placeholder="Message" style={{ height: "200px" }} />
@@ -42,6 +42,9 @@ const Fold4 = () => {
 }
 
 export default Fold4
+
+const Title = styled.h1`
+`
 
 const Form = styled.form`
   display: flex;
