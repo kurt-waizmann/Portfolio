@@ -11,6 +11,11 @@ import Arrow from "../../assets/arrow.svg"
 
 
 const Fold4 = () => {
+
+  const handleSubmit = e => {
+    e.preventDefault()
+  }
+
   return (
     <Wrap>
       <TitleWrap>
@@ -21,10 +26,10 @@ const Fold4 = () => {
       </TitleWrap>
       <FormWrap>
         <Form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-        <input type="hidden" name="contact" value="contact" />
-          <input type="text" id="name" name="name" placeholder="Name" />
-          <input type="email" id="email" name="email" placeholder="E-mail" />
-          <textarea id="message" name="message" placeholder="Message" style={{ height: "200px" }} />
+          <input type="hidden" name="form-name" value="contact" />
+          <input type="text" id="name" name="name" placeholder="Name" required />
+          <input type="email" id="email" name="email" placeholder="E-mail" required />
+          <textarea id="message" name="message" placeholder="Message" style={{ height: "200px" }} required />
           <Icons>
             <Links>
               <a href="https://www.linkedin.com/in/kurt-waizmann"><img src={GitHub} alt="LinkedIn Link" /></a>
