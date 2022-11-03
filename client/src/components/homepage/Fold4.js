@@ -20,7 +20,8 @@ const Fold4 = () => {
         </ImgWrap>
       </TitleWrap>
       <FormWrap>
-        <Form name="contact" method="POST" data-netlify="true">
+        <Form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+        <input type="hidden" name="contact" value="contact" />
           <input type="text" id="name" name="name" placeholder="Name" />
           <input type="email" id="email" name="email" placeholder="E-mail" />
           <textarea id="message" name="message" placeholder="Message" style={{ height: "200px" }} />
