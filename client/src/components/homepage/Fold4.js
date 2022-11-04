@@ -76,6 +76,8 @@ const ContentWrap = styled.div`
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  width: 100%;
+  max-width: 350px ;
   @media (min-width:770px) {
     flex-direction: row;
     gap: 15rem;
@@ -99,12 +101,16 @@ const FormWrap = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 350px ;
+
 `
 const Form = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  width: 100%;
+
 `
 const Submit = styled.input`
   width: 8rem;
