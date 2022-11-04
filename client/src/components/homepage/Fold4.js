@@ -25,7 +25,8 @@ const Fold4 = () => {
         </ImgWrap>
       </TitleWrap>
       <FormWrap>
-        <Form name="contact" method="POST" data-netlify="true">
+        <Form name="contact" method="post">
+          <input type="hidden" name="form-name" value="contact" />
           <input type="text" id="name" name="name" placeholder="Name" required />
           <input type="email" id="email" name="email" placeholder="E-mail" required />
           <textarea id="message" name="message" placeholder="Message" style={{ height: "200px" }} required />
