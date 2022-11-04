@@ -16,13 +16,13 @@ const HamMenu = () => {
     <>
       <Nav className={isActive ? "mobile-nav is-active" : "mobile-nav"}>
         <Links>
-        <Link href="#">Home</Link>
-        <Link href="#">About</Link>
-        <Link href="#">Works</Link>
-        <Link href="#">Contact</Link>
+        <Link href="#fold_1" onClick={handleClick}>Home</Link>
+        <Link href="#fold_2" onClick={handleClick}>About</Link>
+        <Link href="#fold_3" onClick={handleClick}>Works</Link>
+        <Link href="#fold_4" onClick={handleClick}>Contact</Link>
         </Links>
         <Divider/>
-        <CV href='#'>Resumé</CV>
+        <CV href='https://drive.google.com/file/d/192-w0SLVz4kNtf_eL_pgIPm_mIBfy5iH/view' target="_blank">Resumé</CV>
         <img src={Spiral} alt="spiral decoration"/>
       </Nav>
       <Button className={isActive ? "hamburger is-active" : "hamburger"} onClick={handleClick}>

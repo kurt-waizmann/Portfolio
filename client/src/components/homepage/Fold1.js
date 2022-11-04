@@ -6,6 +6,7 @@ import styled from 'styled-components'
 import Logo from "../Logo";
 import Portrait from '../Portrait';
 import HamMenu from '../HamMenu';
+import NavBar from '../NavBar';
 import Zig from '../../assets/ZigZagOrange.svg'
 import Zag from '../../assets/ZigZagYellow.svg'
 
@@ -14,22 +15,28 @@ const Fold1 = () => {
   return (
     <Wrapper>
       <HamMenu />
-      <TextWrap>
-        <Logo />
-        <Title>
-          <div>Full Stack</div>
-          <div>Web Dev</div>
-        </Title>
-        <Subtext>
-          <p>Hi, I’m Kurt. I’m a web developer located In Montreal, Quebec.</p>
-          <Lookout>On the lookout for new opportunities.</Lookout>
-        </Subtext>
-      </TextWrap>
-      <PicWrapper>
-        <ZigZag1 src={Zig} alt="zigzag decoration"/>
-        <Portrait />
-        <ZigZag2 src={Zag} alt="zigzag decoration"/>
-      </PicWrapper>
+      <NavBar />
+      <ContentWrap>
+        <TextWrap>
+          <Logo />
+          <Title>
+            <Name>Kurt Waizmann</Name>
+            <Job>
+              <div>Full Stack</div>
+              <div>Web Dev</div>
+            </Job>
+          </Title>
+          <Subtext>
+            <p>Hi, I’m Kurt. I’m a web developer located In Montreal, Quebec.</p>
+            <Lookout>On the lookout for new opportunities.</Lookout>
+          </Subtext>
+        </TextWrap>
+        <PicWrapper>
+          <ZigZag1 src={Zig} alt="zigzag decoration" />
+          <Portrait />
+          <ZigZag2 src={Zag} alt="zigzag decoration" />
+        </PicWrapper>
+      </ContentWrap>
     </Wrapper>
   )
 }
@@ -41,8 +48,19 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
 `
+const ContentWrap = styled.div`
+@media (min-width:770px) {
+		display: flex;
+    flex-direction: row-reverse;
+    margin: 12rem 0px;
+  }
+`
+
 const TextWrap = styled.div`
   max-width: 25.7rem;
+  @media (min-width:770px) {
+  max-width: 40rem;
+  }
 `
 const Title = styled.div`
   color: #4C5272;
@@ -51,6 +69,21 @@ const Title = styled.div`
   margin-bottom: 1rem;
   text-shadow: -2px 2px 0px #E76A46;
   line-height: 3.5rem;
+`
+const Name = styled.h1`
+  display: none;
+  @media (min-width:770px) {
+    display: block;
+    color: white;
+  }
+`
+const Job = styled.div`
+  display: flex;
+  flex-direction: column;
+  @media (min-width:770px) {
+    flex-direction: row;
+    gap: .8rem;
+  }
 `
 const Subtext = styled.div`
   font-size: 1.7rem;
@@ -70,10 +103,18 @@ const ZigZag1 = styled.img`
   position: relative;
   left: 17rem;
   height: 3rem;
+  @media (min-width:770px) {
+	left: 45rem;
+  bottom: 8rem;
+  }
   `
 const ZigZag2 = styled.img`
   margin: 1rem;
   position: relative;
   left: -17rem;
   height: 3rem;
+  @media (min-width:770px) {
+    left: -12rem;
+    top: 6rem;
+  }
 `

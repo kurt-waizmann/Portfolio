@@ -12,11 +12,13 @@ import Arrow from "../../assets/arrow.svg"
 
 const Fold4 = () => {
   return (
-    <Wrap>
-      <TitleWrap>
+    <>
+    <Wrap id='fold_4'>
         <Title>Reach Out and Say Hi</Title>
+        <ContentWrap>
+      <TitleWrap>
         <ImgWrap>
-          <img src={Smile} alt="smiley face" style={{ width: "120px", margin: "1rem 0px" }} />
+          <Smiley src={Smile} alt="smiley face"/>
         </ImgWrap>
       </TitleWrap>
       <FormWrap>
@@ -34,17 +36,19 @@ const Fold4 = () => {
           </Icons>
         </Form>
       </FormWrap>
+      </ContentWrap>
+    </Wrap>
       <FinePrint>
         <div>© 2022 Kurt Waizmann</div>
         <MTL>
           <div>Made in Montreal</div>
           <img src={Montreal} alt="Montreal logo" />
         </MTL>
-        <BackTop>
+        <BackTop href="#fold_1">
           <img src={Arrow} alt="Navigation arrow" />
         </BackTop>
       </FinePrint>
-    </Wrap>
+      </>
   )
 }
 
@@ -54,16 +58,42 @@ const Wrap = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 10rem 0rem;
 `
 const TitleWrap = styled.div`
 `
 const Title = styled.h1`
+  width: 100%;
+  margin-bottom: 6rem;
+  text-align: center;
+  @media (min-width:770px) {
+    text-align: left;
+    padding-left: 7rem;
+  }
+`
+const ContentWrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  @media (min-width:770px) {
+    flex-direction: row;
+    gap: 15rem;
+  }
 `
 const ImgWrap = styled.div`
   width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
+`
+const Smiley = styled.img`
+  width: 12rem;
+  margin: 1rem 0px;
+  @media (min-width:770px) {
+    width: 20rem;
+  }
 `
 const FormWrap = styled.div`
   display: flex;
@@ -99,17 +129,20 @@ const Links = styled.div`
 
 const FinePrint = styled.div`
   margin-top: 2rem;
-  /* position: absolute; */
+  position: absolute;
   left: 0px;
   width: 100vw;
-  height: 4rem;
+  height: 6rem;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   border-top: 1px solid white;
   justify-content: space-between;
   padding: 1rem 1rem 0px;
   opacity: .8;
+  @media (min-width:770px) {
+    font-size: 1.5rem;
+  }
 `
 const MTL = styled.div`
   display: flex;
@@ -117,7 +150,7 @@ const MTL = styled.div`
   align-items: center;
   gap: .5rem;
 `
-const BackTop = styled.div`
+const BackTop = styled.a`
   width: 3.5rem;
   height: 3.5rem;
   border: 1px solid #E5E0DE;

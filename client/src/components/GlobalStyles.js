@@ -12,6 +12,7 @@ export default createGlobalStyle`
   html {
       font-size: 62.5%;
       overflow:auto;
+      scroll-behavior: smooth;
   }
 
   body {
@@ -21,6 +22,9 @@ export default createGlobalStyle`
     padding: 2rem 4rem 1rem;
     box-sizing: border-box;
     overflow: hidden;
+    @media (min-width:770px) {
+      padding: 5rem 7rem 1rem;
+  }
   }
 h1 {
   font-size: 3.4rem;

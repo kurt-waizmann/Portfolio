@@ -47,7 +47,6 @@ const Box = styled.div`
   border: 5px solid #FFFFFF;
   box-shadow: -5px 5px 0px #000000;
   border-radius: 20px;
-  margin: 3rem 0px;
   overflow: hidden;
 `
 const Wrapper = styled.div`

@@ -6,7 +6,7 @@ import Languages from '../Languages'
 
 const Fold2 = () => {
   return (
-    <Wrapper>
+    <Wrapper id='fold_2'>
       <div>
         <h1>About Me</h1>
         <Details>I'm fascinated with the possibilities of storytelling using web technologies. Previously, I studied filmmaking, worked briefly on independent films as both a sound and lighting technician, as well as working within the hospital industry during the pandemic.</Details>
@@ -22,7 +22,12 @@ export default Fold2
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  @media (min-width:770px) {
+    flex-direction: row;
+    margin: 18rem 0rem;
+  }
 `
 const Details = styled.p`
   line-height: 34px;
