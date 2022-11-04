@@ -49,6 +49,9 @@ input {
   background-color: inherit;
   padding: 1rem;
   max-width: 350px ;
+  @media (min-width:770px) {
+    width: 350px ;
+  }
 }
 textarea {
   font-family: "Poppins", sans-serif;
