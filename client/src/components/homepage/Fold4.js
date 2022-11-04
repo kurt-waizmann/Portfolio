@@ -26,7 +26,6 @@ const Fold4 = () => {
       </TitleWrap>
       <FormWrap>
       <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">          
-        <input type="hidden" name="form-name" value="contact" />
           <input type="text" id="name" name="name" placeholder="Name" required />
           <input type="email" id="email" name="email" placeholder="E-mail" required />
           <textarea id="message" name="message" placeholder="Message" style={{ height: "200px" }} required />
@@ -35,7 +34,7 @@ const Fold4 = () => {
               <a href="https://www.linkedin.com/in/kurt-waizmann"><img src={GitHub} alt="LinkedIn Link" /></a>
               <a href="https://github.com/kurt-waizmann"><img src={LinkedIn} alt="GitHub Link" /></a>
             </Links>
-            <Submit type="submit" value="Send" />
+            <Submit type="submit" />
           </Icons>
         </form>
       </FormWrap>
