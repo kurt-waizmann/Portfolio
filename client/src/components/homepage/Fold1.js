@@ -5,7 +5,7 @@ import styled from 'styled-components'
 // import components
 import Logo from "../Logo";
 import Portrait from '../Portrait';
-import MenuButton from '../MenuButton';
+import HamMenu from '../HamMenu';
 import Zig from '../../assets/ZigZagOrange.svg'
 import Zag from '../../assets/ZigZagYellow.svg'
 
@@ -13,7 +13,7 @@ import Zag from '../../assets/ZigZagYellow.svg'
 const Fold1 = () => {
   return (
     <Wrapper>
-      <MenuButton />
+      <HamMenu />
       <TextWrap>
         <Logo />
         <Title>

@@ -11,11 +11,6 @@ import Arrow from "../../assets/arrow.svg"
 
 
 const Fold4 = () => {
-
-  const handleSubmit = e => {
-    e.preventDefault()
-  }
-
   return (
     <Wrap>
       <TitleWrap>
@@ -25,7 +20,7 @@ const Fold4 = () => {
         </ImgWrap>
       </TitleWrap>
       <FormWrap>
-        <Form name="contact" action="/pages/success" method="post">
+        <Form name="contact" method="post">
           <input type="hidden" name="form-name" value="contact" />
           <input type="text" id="name" name="name" placeholder="Name" required />
           <input type="email" id="email" name="email" placeholder="E-mail" required />

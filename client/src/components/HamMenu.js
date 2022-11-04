@@ -5,7 +5,7 @@ import { useState } from 'react'
 //import images
 import Spiral from "../assets/spiral.svg"
 
-const MenuButton = () => {
+const HamMenu = () => {
   const [isActive, setIsActive] = useState(false)
 
   const handleClick = event => {
@@ -32,7 +32,7 @@ const MenuButton = () => {
   )
 }
 
-export default MenuButton
+export default HamMenu
 
 const Button = styled.button`
     position: fixed;

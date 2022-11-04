@@ -12,9 +12,7 @@ import { projectInfo } from '../info'
 const Fold3 = () => {
   return (
     <Wrapper>
-      <TextWrap>
-        <h1>Things I've Made</h1>
-      </TextWrap>
+        <Title>Things I've Made</Title>
       <div>
         {
           projectInfo.map(project => {
@@ -44,6 +42,6 @@ const Wrapper = styled.div`
   align-items: center;
   width: 100%;
 `
-const TextWrap = styled.div`
-  width: 100%;
+const Title = styled.h1`
+  /* width: 42rem; */
 `

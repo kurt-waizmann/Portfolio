@@ -19,11 +19,11 @@ const Projects = ({ name, pic, github, website, tech, detail }) => {
           <Title>{name}</Title>
           <Links>
             {Boolean(website) === true && <>
-              <a href={website}>
+              <a href={website} style={{display:"flex"}}>
                 <Sites src={Link} alt="website link"/>
               </a>
             </>}
-            <a href={github}>
+            <a href={github} style={{display:"flex"}}>
               <Sites src={GitLink} alt="github link"/>
             </a>
           </Links>
@@ -64,6 +64,7 @@ const ImgWrap = styled.div`
 const Header = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
 `
 const Title = styled.div`
   font-weight: 700;

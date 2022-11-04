@@ -29,8 +29,3 @@ const Details = styled.p`
   margin-top: 2rem;
   max-width: 42rem;
 `
-const LangWrap = styled.div`
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-`
