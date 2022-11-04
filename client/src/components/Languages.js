@@ -48,7 +48,6 @@ const Box = styled.div`
     height: 81.29px;
     border: 2px solid #FFFFFF;
     border-radius: 10px;
-  /* box-shadow: -10px 10px 0px 0px #000000; */
     align-items: center;
     display: flex;
     justify-content: center;
