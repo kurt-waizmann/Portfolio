@@ -25,7 +25,7 @@ const Fold4 = () => {
         </ImgWrap>
       </TitleWrap>
       <FormWrap>
-      <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">          
+        <Form name="contact" method="POST" netlify data-netlify="true" data-netlify-honeypot="bot-field">
           <input type="text" id="name" name="name" placeholder="Name" required />
           <input type="email" id="email" name="email" placeholder="E-mail" required />
           <textarea id="message" name="message" placeholder="Message" style={{ height: "200px" }} required />
@@ -36,7 +36,7 @@ const Fold4 = () => {
             </Links>
             <Submit type="submit" />
           </Icons>
-        </form>
+        </Form>
       </FormWrap>
       <FinePrint>
         <div>© 2022 Kurt Waizmann</div>
