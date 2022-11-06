@@ -42,6 +42,9 @@ const Wrapper = styled.div`
   align-items: center;
   width: 100%;
   margin: 10rem 0rem;
+    @media (min-width:770px) {
+      min-height: 100vh;
+  }
 `
 const Title = styled.h1`
   width: 100%;

@@ -13,8 +13,9 @@ import Zag from '../../assets/ZigZagYellow.svg'
 
 const Fold1 = () => {
   return (
-    <Wrapper>
+    <>
       <HamMenu />
+    <Wrapper>
       <NavBar />
       <ContentWrap>
         <TextWrap>
@@ -38,6 +39,7 @@ const Fold1 = () => {
         </PicWrapper>
       </ContentWrap>
     </Wrapper>
+    </>
   )
 }
 
@@ -47,12 +49,21 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  @media (max-width:770px) {
+    min-height: 90vh;
+
+  }
 `
 const ContentWrap = styled.div`
 @media (min-width:770px) {
 		display: flex;
     flex-direction: row-reverse;
-    margin: 12rem 0px;
+    align-items: center;
+    justify-content: center;
+    /* margin: 12rem 0px; */
+    margin-bottom: 8rem;
+    min-height: 70vh;
   }
 `
 

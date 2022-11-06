@@ -27,6 +27,8 @@ const Wrapper = styled.div`
   @media (min-width:770px) {
     flex-direction: row;
     margin: 18rem 0rem;
+    min-height: 100vh;
+
   }
 `
 const Details = styled.p`

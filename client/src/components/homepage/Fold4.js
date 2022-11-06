@@ -58,9 +58,16 @@ const Wrap = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin: 10rem 0rem;
+  @media (min-width:770px) {
+      min-height: 80vh;
+  }
 `
 const TitleWrap = styled.div`
+  @media (min-width:770px) {
+    width: 100%;
+  }
 `
 const Title = styled.h1`
   width: 100%;
@@ -77,10 +84,8 @@ const ContentWrap = styled.div`
   justify-content: center;
   align-content: center;
   width: 100%;
-  max-width: 350px ;
   @media (min-width:770px) {
     flex-direction: row;
-    gap: 15rem;
   }
 `
 const ImgWrap = styled.div`
@@ -88,6 +93,7 @@ const ImgWrap = styled.div`
   height: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 1rem;
 `
 const Smiley = styled.img`
@@ -101,16 +107,19 @@ const FormWrap = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 350px ;
-
+  justify-content: center;
+  @media (min-width:770px) {
+    width:100%;
+  }
 `
 const Form = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
   width: 100%;
-
+  max-width: 350px ;
 `
 const Submit = styled.input`
   width: 8rem;
@@ -144,7 +153,7 @@ const FinePrint = styled.div`
   align-items: flex-start;
   border-top: 1px solid white;
   justify-content: space-between;
-  padding: 1rem 1rem 0px;
+  padding: 1rem 2rem 0px;
   opacity: .8;
   @media (min-width:770px) {
     font-size: 1.5rem;

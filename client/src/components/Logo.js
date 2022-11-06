@@ -21,7 +21,7 @@ export default Logo
 
 const LogoWrapper = styled.div`
     position: relative;
-    margin-top: 3.5rem;
+    /* margin-top: 3.5rem; */
     margin-bottom: 1rem;
 
     @media (min-width:770px) {
