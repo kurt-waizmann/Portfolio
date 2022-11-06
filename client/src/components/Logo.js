@@ -21,13 +21,12 @@ export default Logo
 
 const LogoWrapper = styled.div`
     position: relative;
-    /* margin-top: 3.5rem; */
     margin-bottom: 1rem;
-
     @media (min-width:770px) {
         position: absolute;
         left: 5rem;
         top: 0rem;
+        margin-top: 3.5rem;
 }
 `
 const ImageDoor = styled.img`
