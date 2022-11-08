@@ -70,15 +70,16 @@ const Box = styled.div`
         &:after {
         content: '${prop => prop.name}';
         position: absolute;
-        background-color: #5d7380;
+        background-color: #4C5272;
         width: 100%;
         height: 100%;
         opacity: 0;
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: opacity 0.2s;  
         }
-        
+
         &:hover:after{
             opacity: 1;
         }

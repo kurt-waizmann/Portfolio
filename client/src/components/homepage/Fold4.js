@@ -5,9 +5,10 @@ import styled from 'styled-components'
 import Smile from "../../assets/smile.svg"
 import GitHub from "../../assets/github.svg"
 import LinkedIn from "../../assets/linkedin.svg"
-import Montreal from "../../assets/montreal.svg"
-import Arrow from "../../assets/arrow.svg"
 
+
+//import components
+import FinePrint from '../FinePrint'
 
 
 const Fold4 = () => {
@@ -30,8 +31,8 @@ const Fold4 = () => {
           <textarea id="message" name="message" placeholder="Message" style={{ height: "200px" }} required />
           <Icons>
             <Links>
-              <a href="https://www.linkedin.com/in/kurt-waizmann"><img src={GitHub} alt="LinkedIn Link" /></a>
-              <a href="https://github.com/kurt-waizmann"><img src={LinkedIn} alt="GitHub Link" /></a>
+              <a href="https://www.linkedin.com/in/kurt-waizmann"><Img src={GitHub} alt="LinkedIn Link" /></a>
+              <a href="https://github.com/kurt-waizmann"><Img src={LinkedIn} alt="GitHub Link" /></a>
             </Links>
             <Submit type="submit" value="Send"/>
           </Icons>
@@ -40,16 +41,7 @@ const Fold4 = () => {
       </ContentWrap>
       </div>
     </Wrap>
-      <FinePrint>
-        <div>© 2022 Kurt Waizmann</div>
-        <MTL>
-          <div>Made in Montreal</div>
-          <img src={Montreal} alt="Montreal logo" />
-        </MTL>
-        <BackTop href="#fold_1">
-          <img src={Arrow} alt="Navigation arrow" />
-        </BackTop>
-      </FinePrint>
+    <FinePrint />
       </>
   )
 }
@@ -77,7 +69,6 @@ const Title = styled.h1`
   text-align: center;
   @media (min-width:770px) {
     text-align: left;
-    /* padding-left: 7rem; */
   }
 `
 const ContentWrap = styled.div`
@@ -134,6 +125,12 @@ const Submit = styled.input`
   font-size: 1.5rem;
   color: white;
   padding: 5px;
+
+      &:hover {
+      color: #4C5272;
+      border: 2px solid #4C5272;
+    }
+    
 `
 const Icons = styled.div`
   width: 100%;
@@ -147,36 +144,8 @@ const Links = styled.div`
   flex-direction: row;
   gap: 1.5rem;
 `
-
-const FinePrint = styled.div`
-  margin-top: 2rem;
-  position: absolute;
-  left: 0px;
-  width: 100vw;
-  height: 6rem;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  border-top: 1px solid white;
-  justify-content: space-between;
-  padding: 1rem 2rem 0px;
-  opacity: .8;
-  @media (min-width:770px) {
-    font-size: 1.5rem;
+const Img = styled.img`
+  &:hover{
+    filter: invert(31%) sepia(9%) saturate(1727%) hue-rotate(193deg) brightness(55%) contrast(87%);
   }
-`
-const MTL = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: .5rem;
-`
-const BackTop = styled.a`
-  width: 3.5rem;
-  height: 3.5rem;
-  border: 1px solid #E5E0DE;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
 `
