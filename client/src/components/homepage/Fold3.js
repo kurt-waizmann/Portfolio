@@ -12,6 +12,7 @@ import { projectInfo } from '../info'
 const Fold3 = () => {
   return (
     <Wrapper id='fold_3'>
+      <div>
         <Title>Things I've Made</Title>
       <ProjWrap>
         {
@@ -28,6 +29,7 @@ const Fold3 = () => {
           })
         }
       </ProjWrap>
+      </div>
     </Wrapper>
 
   )
@@ -51,7 +53,7 @@ const Title = styled.h1`
   text-align: center;
   @media (min-width:770px) {
     text-align: left;
-    padding-left: 7rem;
+    /* padding-left: 7rem; */
   }
 `
 const ProjWrap = styled.div`
@@ -62,7 +64,9 @@ const ProjWrap = styled.div`
   margin-top: 3rem;
   gap: 3rem;
   @media (min-width:770px) {
+    width:100%;
     flex-direction: row;
     flex-wrap: wrap;
-  }
+    justify-content: flex-start;
+}
 `

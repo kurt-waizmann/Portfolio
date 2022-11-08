@@ -2,38 +2,34 @@
 import styled from 'styled-components'
 import { v4 as uuid } from 'uuid';
 
-//import images
-import css from "../assets/code-logos/css3.png"
-import express from "../assets/code-logos/express.png"
-import figma from "../assets/code-logos/figma.png"
-import html from "../assets/code-logos/html5.png"
-import javascript from "../assets/code-logos/javascript.png"
-import mongodb from "../assets/code-logos/mongodb.png"
-import node from "../assets/code-logos/nodejs.png"
-import react from "../assets/code-logos/react.png"
-import sass from "../assets/code-logos/sass.png"
-
-const languages = [html, css, javascript, react, sass, node, express, figma, mongodb]
-
+//import info
+import { languages } from './info';
 
 const Languages = () => {
+
     return (
-        <Wrapper>
-            {languages.map(pic => {
-                return (
-                <Box key={uuid()}>
-                    <Image src={pic} alt="technologies" />
-                    <Shadow/>
-                </Box>
-                )
-            })}
-    </Wrapper>
+        <div>
+            <Wrapper>
+                {languages.map(lang => {
+                    return (
+                        <BoxWrap>
+                            <Box key={uuid()} name={lang.name}>
+                                <Image src={lang.pic} alt="technologies" />
+                            </Box>
+                            <Shadow />
+                        </BoxWrap>
+                    )
+                })}
+            </Wrapper>
+        </div>
     )
 }
 
 export default Languages
 
+
 const Wrapper = styled.div`
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -42,6 +38,13 @@ const Wrapper = styled.div`
     justify-content: center;
     margin: 5rem 0px;
     max-width: 35rem;
+
+    @media (min-width:770px) {
+    margin: 2rem 0px;
+}
+`
+const BoxWrap = styled.div`
+    position: relative;
 `
 const Box = styled.div`
     width: 81.29px;
@@ -53,6 +56,33 @@ const Box = styled.div`
     justify-content: center;
     position: relative;
     background-color: white;
+    transition: transform .2s ease-out;
+    overflow: hidden;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+
+    @media (min-width:770px) {
+        &:hover {
+        transform: translate(.5rem, -.5rem);
+        }
+
+        &:after {
+        content: '${prop => prop.name}';
+        position: absolute;
+        background-color: #5d7380;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        
+        &:hover:after{
+            opacity: 1;
+        }
+    }
 `
 const Shadow = styled.div`
     width: 81.29px;
@@ -62,6 +92,8 @@ const Shadow = styled.div`
     position: absolute;
     top: 5px;
     right: 5px;
+    transform: unset;
+    z-index: -1;
 `
 const Image = styled.img`
     width: 5rem;

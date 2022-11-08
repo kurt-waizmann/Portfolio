@@ -14,6 +14,7 @@ const Fold4 = () => {
   return (
     <>
     <Wrap id='fold_4'>
+      <div>
         <Title>Reach Out and Say Hi</Title>
         <ContentWrap>
       <TitleWrap>
@@ -37,6 +38,7 @@ const Fold4 = () => {
         </Form>
       </FormWrap>
       </ContentWrap>
+      </div>
     </Wrap>
       <FinePrint>
         <div>© 2022 Kurt Waizmann</div>
@@ -75,7 +77,7 @@ const Title = styled.h1`
   text-align: center;
   @media (min-width:770px) {
     text-align: left;
-    padding-left: 7rem;
+    /* padding-left: 7rem; */
   }
 `
 const ContentWrap = styled.div`
@@ -84,6 +86,7 @@ const ContentWrap = styled.div`
   justify-content: center;
   align-content: center;
   width: 100%;
+  gap: 4rem;
   @media (min-width:770px) {
     flex-direction: row;
   }
@@ -95,12 +98,15 @@ const ImgWrap = styled.div`
   justify-content: center;
   align-items: center;
   margin-bottom: 1rem;
+  width: 350px ;
+
 `
 const Smiley = styled.img`
   width: 12rem;
   margin: 1rem 0px;
   @media (min-width:770px) {
-    width: 20rem;
+    width: 25rem;
+    padding-bottom: 5rem;
   }
 `
 const FormWrap = styled.div`
