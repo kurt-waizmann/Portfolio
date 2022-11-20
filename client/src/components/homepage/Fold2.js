@@ -1,20 +1,24 @@
 // import packages
 import styled from 'styled-components'
 
-//import components
+//import info
 import Languages from '../Languages'
+import BioText from './BioText'
 
 const Fold2 = () => {
   return (
     <Wrapper id='fold_2'>
       <div>
         <h1>About Me</h1>
-      <InnerWrap>
-      <div>
-        <Details>I'm fascinated with the possibilities of storytelling using web technologies. Previously, I studied filmmaking, worked briefly on independent films as both a sound and lighting technician, as well as working within the hospital industry during the pandemic.</Details>
-      </div>
-      <Languages />
-      </InnerWrap>
+        <InnerWrap>
+          <div>
+            <BioText/>
+          </div>
+          <LangWrap>
+            <Tools style={{lineHeight:"4rem", width:"100%"}}>Tools &<br/>Languages</Tools>
+            <Languages />
+          </LangWrap>
+        </InnerWrap>
       </div>
     </Wrapper>
 
@@ -35,17 +39,22 @@ align-items: center;
 `
 
 const InnerWrap = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-@media (min-width:770px) {
-  flex-direction: row;
-  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (min-width:770px) {
+    flex-direction: row;
+    align-items: center;
+    gap: 10rem;
 }
 `
-const Details = styled.p`
-  line-height: 34px;
-  margin-top: 2rem;
-  max-width: 42rem;
+const LangWrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`
+const Tools = styled.h1`
+  margin-top: 5rem;
 `

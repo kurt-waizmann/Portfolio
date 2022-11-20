@@ -23,12 +23,12 @@ const Fold1 = () => {
           <Title>
             <Name>Kurt Waizmann</Name>
             <Job>
-              <div>Full Stack</div>
-              <div>Web Dev</div>
+              <div>Web</div>
+              <div>Developer</div>
             </Job>
           </Title>
           <Subtext>
-            <p>Hi, I’m Kurt. I’m a web developer located In Montreal, Quebec.</p>
+            <p>Hi, I’m Kurt. I’m a front-end web developer located In Montreal, Quebec.</p>
             <Lookout>On the lookout for new opportunities.</Lookout>
           </Subtext>
         </TextWrap>
@@ -75,10 +75,10 @@ const TextWrap = styled.div`
 `
 const Title = styled.div`
   color: #4C5272;
-  font-size: 3.4rem;
+  font-size: 4rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  text-shadow: -2px 2px 0px #E76A46;
+  /* text-shadow: -2px 2px 0px #E76A46; */
   line-height: 3.5rem;
 `
 const Name = styled.h1`
@@ -86,11 +86,14 @@ const Name = styled.h1`
   @media (min-width:770px) {
     display: block;
     color: white;
+    margin-bottom: 0px;
   }
 `
 const Job = styled.div`
   display: flex;
   flex-direction: column;
+  text-shadow: -2px 2px 0px #E76A46;
+
   @media (min-width:770px) {
     flex-direction: row;
     gap: .8rem;

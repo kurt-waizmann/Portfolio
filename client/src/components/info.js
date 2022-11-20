@@ -48,7 +48,7 @@ export const languages = [
         name:"MongoDB",
         pic: mongodb
     },
-]
+];
 
 
 
@@ -69,4 +69,5 @@ export const projectInfo = [
         tech: ["react", "javascript", "node.js", "mongodb", "express.js"],
         detail: "E-commerce website for sportswear products. Includes predictive searches, responsive shopping cart, RESTful APIs, and a database.",
     }
-]
+];
+

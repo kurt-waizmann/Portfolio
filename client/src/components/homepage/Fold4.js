@@ -16,7 +16,7 @@ const Fold4 = () => {
     <>
     <Wrap id='fold_4'>
       <div>
-        <Title>Reach Out and Say Hi</Title>
+        <Title>Reach Out, Say Hi</Title>
         <ContentWrap>
       <TitleWrap>
         <ImgWrap>

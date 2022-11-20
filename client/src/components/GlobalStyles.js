@@ -31,9 +31,20 @@ h1 {
   font-weight: 700;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
-  text-shadow: -2px 2px 0px #E76A46;
+  text-shadow: -3px 3px 0px #E76A46;
   line-height: 3.5rem;
+  /* text-transform: uppercase; */
+
+  @media (min-width:770px) {
+  font-size: 4rem;
+  line-height: 7rem;
+}
   }
+h2 {
+  font-size: 2rem;
+  text-shadow: -2px 2px 0px #E76A46;
+  text-transform: uppercase;
+}
 p {
   font-size: 1.7rem;
   font-weight: 200;

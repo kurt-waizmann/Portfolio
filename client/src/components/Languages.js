@@ -38,7 +38,6 @@ const Wrapper = styled.div`
     justify-content: center;
     margin: 5rem 0px;
     max-width: 35rem;
-
     @media (min-width:770px) {
     margin: 2rem 0px;
 }
