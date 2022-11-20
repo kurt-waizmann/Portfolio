@@ -86,7 +86,7 @@ const Name = styled.h1`
   @media (min-width:770px) {
     display: block;
     color: white;
-    margin-bottom: 0px;
+    margin: 0px;
   }
 `
 const Job = styled.div`

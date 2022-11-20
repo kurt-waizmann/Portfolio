@@ -53,7 +53,7 @@ const Wrap = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 10rem 0rem;
+  margin: 10rem 0rem 5rem 0rem;
   @media (min-width:770px) {
       min-height: 80vh;
   }

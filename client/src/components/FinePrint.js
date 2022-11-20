@@ -46,6 +46,10 @@ const MTL = styled.div`
     flex-direction: row;
     align-items: center;
     gap: .5rem;
+    @media (min-width:770px) {
+    position: relative;
+    left: -5rem;    
+    }
 `
 const BackTop = styled.a`
     width: 3.5rem;
