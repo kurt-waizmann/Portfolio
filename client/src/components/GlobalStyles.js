@@ -23,7 +23,7 @@ export default createGlobalStyle`
     box-sizing: border-box;
     overflow: hidden;
     @media (min-width:770px) {
-      padding: 5rem 7rem 1rem;
+      padding: 5rem 4rem 1rem;
   }
   }
 h1 {

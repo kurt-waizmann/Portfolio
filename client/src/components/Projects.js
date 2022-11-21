@@ -38,12 +38,9 @@ const Projects = ({ name, pic, github, website, tech, detail }) => {
 export default Projects
 
 const Box = styled.div`
-  width: 100%;
-  min-height: 440px;
-  max-width: 350px ;
-  left: 17px;
-  top: 2182px;
-  background: #8B96A7;
+  height: 44rem;
+  width: 33rem ;
+  background: #343635;
   border: 5px solid #FFFFFF;
   box-shadow: -5px 5px 0px #000000;
   border-radius: 20px;
@@ -76,10 +73,12 @@ const Links = styled.div`
 `
 const Sites = styled.img`
   width: 3.5rem;
-  color: red;
+  &:hover{
+    filter: invert(31%) sepia(9%) saturate(1727%) hue-rotate(193deg) brightness(55%) contrast(87%);
+  }
 `
 const Desc = styled.div`
-  font-weight: 300;
-  font-size: 16px;
+  font-weight: 200;
+  font-size: 1.5rem;
   line-height: 150%;
 `

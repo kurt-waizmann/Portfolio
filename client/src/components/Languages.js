@@ -37,7 +37,7 @@ const Wrapper = styled.div`
     align-items: center;
     justify-content: flex-start;
     margin: 2rem 0px;
-    max-width: 35rem;
+    width: 28rem;
 `
 const BoxWrap = styled.div`
     position: relative;
@@ -56,7 +56,9 @@ const Box = styled.div`
     overflow: hidden;
     font-size: 1rem;
     font-weight: 400;
-    letter-spacing: 1.5px;
+    letter-spacing: 0.5px;
+    word-wrap: break-word;
+    text-align: center;
 
     @media (min-width:770px) {
         &:hover {

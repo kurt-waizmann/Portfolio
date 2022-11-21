@@ -9,8 +9,8 @@ const Fold2 = () => {
   return (
     <Wrapper id='fold_2'>
       <div>
-        <About>About Me</About>
         <InnerWrap>
+        <About>About Me</About>
           <BioText />
         </InnerWrap>
       </div>
@@ -31,12 +31,12 @@ const Wrapper = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: space-evenly;
-align-items: flex-start;
+align-items: center;
 @media (min-width:770px) {
+  flex-direction: row;
+  align-items: flex-start;
   margin: 18rem 0rem;
   min-height: 70vh;
-  flex-direction: row;
-  gap: 10rem;
 }
 `
 
@@ -45,10 +45,11 @@ const InnerWrap = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 32rem;
   @media (min-width:770px) {
-    flex-direction: row;
+    flex-direction: center;
     align-items: flex-start;
-    gap: 10rem;
+    /* gap: 10rem; */
 }
 `
 const About = styled.h1`
@@ -56,21 +57,27 @@ const About = styled.h1`
 `
 const Divider = styled.div`
   @media (min-width:770px) {
-    height: 50rem;
-    border-left: 1px solid white;    
+    min-height: 60rem;
+    height: 100%;
+    border-left: 1px solid white;  
+    margin: 0rem 5%;
 }
 `
 const LangWrap = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   margin-top: 5rem;
   @media (min-width:770px) {
   margin-top: 0rem;
-}
+  align-items: flex-start;
+  }
 `
 const Tools = styled.h1`
+  @media (max-width:770px) {
+    display: block;
+    text-align: center;}
 `
 const Deco = styled.div`
   /* visibility: hidden;

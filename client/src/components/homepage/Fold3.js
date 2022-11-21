@@ -12,7 +12,7 @@ import { projectInfo } from '../info'
 const Fold3 = () => {
   return (
     <Wrapper id='fold_3'>
-      <div>
+      <InnerWrap>
         <Title>Things I've Made</Title>
       <ProjWrap>
         {
@@ -29,7 +29,7 @@ const Fold3 = () => {
           })
         }
       </ProjWrap>
-      </div>
+      </InnerWrap>
     </Wrapper>
 
   )
@@ -41,32 +41,35 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  width: 100%;
+  align-content: center;
   margin: 10rem 0rem;
     @media (min-width:770px) {
       min-height: 100vh;
   }
 `
 const Title = styled.h1`
-  width: 100%;
   text-align: center;
   @media (min-width:770px) {
     text-align: left;
-    /* padding-left: 7rem; */
+    width: 105rem;
   }
+`
+const InnerWrap = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 `
 const ProjWrap = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin-top: 3rem;
   gap: 2rem;
+
   @media (min-width:770px) {
-    width:100%;
     flex-direction: row;
-    /* flex-wrap: wrap; */
-    justify-content: flex-start;
-}
+    max-width: 105rem;
+  } 
 `

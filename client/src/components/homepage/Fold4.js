@@ -80,6 +80,7 @@ const ContentWrap = styled.div`
   gap: 4rem;
   @media (min-width:770px) {
     flex-direction: row;
+    gap: 8rem;
   }
 `
 const ImgWrap = styled.div`
