@@ -35,12 +35,9 @@ const Wrapper = styled.div`
     flex-wrap: wrap;
     gap: 1.5rem;
     align-items: center;
-    justify-content: center;
-    margin: 5rem 0px;
-    max-width: 35rem;
-    @media (min-width:770px) {
+    justify-content: flex-start;
     margin: 2rem 0px;
-}
+    max-width: 35rem;
 `
 const BoxWrap = styled.div`
     position: relative;

@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const BioText = () => {
     return (
-        <div>
+        <Wrapper>
             <Details>
                 <span>I'm fascinated with the possibilities of</span> 
                 <Story> storytelling </Story> 
@@ -15,7 +15,7 @@ const BioText = () => {
                 <span> where I dabbled in eveything from sound design, screenwriting, and even directed my own projects. Now I hope to apply those lessons learned to my journey in web development.
                 </span>
             </Details>
-            <Details>
+            <Details style={{marginTop: "2rem"}} >
                 <span>
                 I have an education in full stack development — the </span>
                 <Mern>MERN</Mern>
@@ -29,45 +29,49 @@ const BioText = () => {
                 <Css>CSS</Css>
                 <span>. But I'm excited to continue my education and expand my coding knowledge even further, exploring more web technologies.</span>
             </Details>
-        </div>
+        </Wrapper>
     )
 }
 
 export default BioText
 
+const Wrapper = styled.div`
+margin-top: 1rem;
+@media (min-width:770px) {
+    margin-top: 2rem;
+}
+`
 const Details = styled.div`
   font-size: 1.7rem;
   font-weight: 200;
   line-height: 2.4rem;
-  line-height: 34px;
-  margin-top: 2rem;
   max-width: 42rem;
   text-align: justify;
   text-justify: inter-word;
 `
 
 const Story = styled.span`
-    font-weight: 700;
+    /* font-weight: 700; */
 `
 const Tech = styled.span`
 `
 const School = styled.span`
-    font-weight: 700;
+    /* font-weight: 700; */
 `
 const Mern = styled.span`
-    font-weight: 700;
-    font-family: 'PT Mono';
-    letter-spacing: .3rem;
+    font-weight: 400;
+    /* font-family: 'PT Mono';
+    letter-spacing: .3rem; */
 
 `
 const Front = styled.span`
 `
 const Parentheses = styled.span`
     font-size: .8em;
-    font-weight: 400;
+    /* font-weight: 400; */
 `
 const React = styled.span`
-    font-weight: 700;
+    /* font-weight: 700; */
 `
 const Css = styled.span`
 `

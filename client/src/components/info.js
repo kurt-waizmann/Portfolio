@@ -1,6 +1,7 @@
 //import images
 import After from "../assets/after.png"
 import BodyBreak from "../assets/bodybreak.png"
+import Unknown from "../assets/unknown.png"
 import css from "../assets/code-logos/css3.png"
 import express from "../assets/code-logos/express.png"
 import figma from "../assets/code-logos/figma.png"
@@ -68,6 +69,14 @@ export const projectInfo = [
         website: "",
         tech: ["react", "javascript", "node.js", "mongodb", "express.js"],
         detail: "E-commerce website for sportswear products. Includes predictive searches, responsive shopping cart, RESTful APIs, and a database.",
+    },
+    {
+        name: "TBD",
+        pic: Unknown,
+        github: "https://github.com/kurt-waizmann/Body-Break",
+        website: "",
+        tech: ["react", "javascript", "node.js", "mongodb", "express.js"],
+        detail: "Gotta add something here...",
     }
 ];
 

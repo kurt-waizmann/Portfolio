@@ -62,11 +62,11 @@ const ProjWrap = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 3rem;
-  gap: 3rem;
+  gap: 2rem;
   @media (min-width:770px) {
     width:100%;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: flex-start;
 }
 `
