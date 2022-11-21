@@ -39,10 +39,11 @@ export default Projects
 
 const Box = styled.div`
   height: 44rem;
-  width: 33rem ;
+  max-width: 32rem ;
+  width: 100%;
   background: #343635;
-  border: 5px solid #FFFFFF;
-  box-shadow: -5px 5px 0px #000000;
+  border: 5px solid #343635;
+  box-shadow: -5px 5px 0px #FFFFFF;
   border-radius: 20px;
   overflow: hidden;
 `

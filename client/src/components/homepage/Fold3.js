@@ -51,14 +51,13 @@ const Title = styled.h1`
   text-align: center;
   @media (min-width:770px) {
     text-align: left;
-    width: 105rem;
   }
 `
 const InnerWrap = styled.div`
-display: flex;
+/* display: flex;
 flex-direction: column;
 justify-content: center;
-align-items: center;
+align-items: center; */
 `
 const ProjWrap = styled.div`
   display: flex;
@@ -70,6 +69,7 @@ const ProjWrap = styled.div`
 
   @media (min-width:770px) {
     flex-direction: row;
+    flex-wrap: wrap;
     max-width: 105rem;
   } 
 `
