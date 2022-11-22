@@ -47,7 +47,7 @@ h2 {
 }
 p {
   font-size: 1.7rem;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 2.4rem;
   }
 input {

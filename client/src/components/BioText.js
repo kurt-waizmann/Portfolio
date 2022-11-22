@@ -29,12 +29,12 @@ margin-top: 1rem;
 }
 `
 const Details = styled.div`
-  font-size: 1.6rem;
-  font-weight: 200;
+  font-size: 1.7rem;
+  font-weight: 300;
   line-height: 2.4rem;
   max-width: 42rem;
-  text-align: justify;
-  text-justify: inter-word;
+  /* text-align: justify; */
+  /* text-justify: inter-word; */
 `
 const Mern = styled.span`
     font-weight: 400;

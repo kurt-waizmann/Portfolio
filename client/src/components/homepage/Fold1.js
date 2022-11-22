@@ -100,8 +100,6 @@ const Job = styled.div`
   }
 `
 const Subtext = styled.div`
-  font-size: 1.7rem;
-  font-weight: 200;
   line-height: 2.4rem;
 `
 const Lookout = styled.p`
