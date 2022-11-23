@@ -19,11 +19,11 @@ const Projects = ({ name, pic, github, website, tech, detail }) => {
           <Title>{name}</Title>
           <Links>
             {Boolean(website) === true && <>
-              <a href={website} style={{display:"flex"}}>
-                <Sites src={Link} alt="website link"/>
+              <a href={website} style={{display:"flex"}} target="_blank">
+                <Sites src={Link} alt="website link" />
               </a>
             </>}
-            <a href={github} style={{display:"flex"}}>
+            <a href={github} style={{display:"flex"}} target="_blank">
               <Sites src={GitLink} alt="github link"/>
             </a>
           </Links>
