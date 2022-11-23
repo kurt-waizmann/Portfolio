@@ -53,7 +53,7 @@ const InnerWrap = styled.div`
 }
 `
 const About = styled.h1`
-  line-height: 4rem;
+  /* line-height: 4rem; */
 `
 const Divider = styled.div`
   @media (min-width:770px) {

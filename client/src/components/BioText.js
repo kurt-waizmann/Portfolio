@@ -32,9 +32,12 @@ const Details = styled.div`
   font-size: 1.7rem;
   font-weight: 300;
   line-height: 2.4rem;
-  max-width: 42rem;
+  max-width: 29rem;
   /* text-align: justify; */
   /* text-justify: inter-word; */
+  @media (min-width:770px) {
+    max-width: 32rem;
+}
 `
 const Mern = styled.span`
     font-weight: 400;

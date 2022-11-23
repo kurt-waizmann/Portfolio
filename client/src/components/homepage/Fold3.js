@@ -65,7 +65,7 @@ const ProjWrap = styled.div`
   justify-content: flex-start;
   align-items: center;
   margin-top: 3rem;
-  gap: 2rem;
+  gap: 4rem;
 
   @media (min-width:770px) {
     flex-direction: row;

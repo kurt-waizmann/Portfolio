@@ -117,7 +117,7 @@ const Form = styled.form`
   justify-content: center;
   gap: 2rem;
   width: 100%;
-  max-width: 350px ;
+  max-width: 300px ;
 `
 const Submit = styled.input`
   width: 8rem;

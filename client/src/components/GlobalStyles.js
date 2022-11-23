@@ -53,7 +53,7 @@ p {
 input {
   font-family: "Poppins", sans-serif;
   color: #FFFFFF;
-  width: 100%;
+  width: 30rem;
   height: 48px;
   border: 1px solid #FFFFFF;
   border-radius: 10px;
@@ -61,14 +61,14 @@ input {
   padding: 1rem;
   max-width: 350px ;
   @media (min-width:770px) {
-    width: 350px ;
+    /* width: 350px ; */
   }
 }
 textarea {
   font-family: "Poppins", sans-serif;
   color: #FFFFFF;
   font-family: "Poppins", sans-serif;
-  width: 100%;
+  width: 30rem;
   border: 1px solid #FFFFFF;
   border-radius: 10px;
   background-color: inherit;
