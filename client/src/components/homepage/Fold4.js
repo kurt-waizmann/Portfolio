@@ -31,8 +31,8 @@ const Fold4 = () => {
           <textarea id="message" name="message" placeholder="Message" style={{ height: "200px" }} required />
           <Icons>
             <Links>
-              <a href="https://www.linkedin.com/in/kurt-waizmann"><Img src={GitHub} alt="LinkedIn Link" /></a>
-              <a href="https://github.com/kurt-waizmann"><Img src={LinkedIn} alt="GitHub Link" /></a>
+              <a href="https://github.com/kurt-waizmann"><Img src={GitHub} alt="LinkedIn Link" /></a>
+              <a href="https://www.linkedin.com/in/kurt-waizmann"><Img src={LinkedIn} alt="GitHub Link" /></a>
             </Links>
             <Submit type="submit" value="Send"/>
           </Icons>

@@ -1,7 +1,7 @@
 //import images
 import After from "../assets/after.png"
 import BodyBreak from "../assets/bodybreak.png"
-import Unknown from "../assets/unknown.png"
+import FoodIdeas from "../assets/foodideas.png"
 import css from "../assets/code-logos/css3.png"
 import express from "../assets/code-logos/express.png"
 import figma from "../assets/code-logos/figma.png"
@@ -82,12 +82,12 @@ export const projectInfo = [
         detail: "E-commerce website for sportswear products. Includes predictive searches, responsive shopping cart, RESTful APIs, and a database.",
     },
     {
-        name: "TBD",
-        pic: Unknown,
-        github: "https://github.com/kurt-waizmann/Body-Break",
+        name: "Gimme Food!",
+        pic: FoodIdeas,
+        github: "https://github.com/kurt-waizmann/Make-a-Meal",
         website: "",
-        tech: ["react", "javascript", "node.js", "mongodb", "express.js"],
-        detail: "Gotta add something here...",
+        tech: ["react", "javascript"],
+        detail: "App (under development) that suggects meal ideas. Takes from an API to supply the user with a random recipe for a meal.",
     }
 ];
 
