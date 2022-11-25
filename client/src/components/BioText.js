@@ -6,15 +6,15 @@ const BioText = () => {
     return (
         <Wrapper>
             <Details>
-                I'm fascinated with the possibilities of storytelling using web technologies. Previously, I studied film production at the Mel Hoppenheim School of Cinema where I dabbled in eveything from sound design, screenwriting, and even directed my own projects. Now I hope to apply those lessons to my journey in web development.
+                My passion for storytelling took me to the Mel Hoppenheim School of Cinema, where I studied film production. There, I wrote and directed my own projects and even got hands-on in the post production process by stepping in as sound designer. Now I hope to apply the invaluable lessons I learned to my journey in web development.
             </Details>
             <Details style={{ marginTop: "2rem" }} >
                 I have an education in full stack development — the
                 <Mern> MERN </Mern>
-                stack. But my preferences lean more towards front-end development. I work a lot in React.js and I have a special fondness for CSS.
+                I received my education in full stack development — the MERN stack. Personally, I lean more towards front-end development. I often work in React.js and I also have a special fondness for CSS.
             </Details>
             <Details style={{ marginTop: "2rem" }}>
-                Wherever I find myself next, I'm excited to continue my education, collaborate with new people, and explore new web technologies!
+                Wherever I find myself next, I'm excited to take new steps in my journey, collaborate with the people I meet along the way, and explore the endless potential of new web technologies.
             </Details>
         </Wrapper>
     )
@@ -36,7 +36,7 @@ const Details = styled.div`
   /* text-align: justify; */
   /* text-justify: inter-word; */
   @media (min-width:770px) {
-    max-width: 32rem;
+    max-width: rem;
 }
 `
 const Mern = styled.span`
