@@ -9,8 +9,6 @@ const BioText = () => {
                 My passion for storytelling took me to the Mel Hoppenheim School of Cinema, where I studied film production. There, I wrote and directed my own projects and even got hands-on in the post production process by stepping in as sound designer. Now I hope to apply the invaluable lessons I learned to my journey in web development.
             </Details>
             <Details style={{ marginTop: "2rem" }} >
-                I have an education in full stack development — the
-                <Mern> MERN </Mern>
                 I received my education in full stack development — the MERN stack. Personally, I lean more towards front-end development. I often work in React.js and I also have a special fondness for CSS.
             </Details>
             <Details style={{ marginTop: "2rem" }}>
