@@ -57,7 +57,7 @@ const About = styled.h1`
 `
 const Divider = styled.div`
   @media (min-width:770px) {
-    min-height: 60rem;
+    min-height: 70rem;
     height: 100%;
     border-left: 1px solid white;  
     margin: 0rem 5%;
