@@ -28,7 +28,7 @@ const Fold1 = () => {
             </Job>
           </Title>
           <Subtext>
-            <p>Hi, I’m Kurt. I’m a front-end web developer located In Montreal, Quebec.</p>
+            <p>Hi, I’m Kurt. I’m a full stack web developer located In Montreal, Quebec.</p>
             <Lookout>On the lookout for new opportunities.</Lookout>
           </Subtext>
         </TextWrap>
