@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-export default createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
   *,
   *::after,
   *::before {
@@ -33,7 +33,6 @@ h1 {
   margin-bottom: 1rem;
   text-shadow: -3px 3px 0px #E76A46;
   line-height: 3.5rem;
-  /* text-transform: uppercase; */
 
   @media (min-width:770px) {
   font-size: 4rem;
@@ -61,7 +60,6 @@ input {
   padding: 1rem;
   max-width: 350px ;
   @media (min-width:770px) {
-    /* width: 350px ; */
   }
 }
 textarea {
@@ -84,3 +82,5 @@ textarea {
   opacity: .7;
 }
 `;
+
+export default GlobalStyles;
