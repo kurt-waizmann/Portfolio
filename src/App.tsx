@@ -5,8 +5,10 @@ import NavBar from "./components/navigations/NavBar";
 import Hero from "./components/sections/Hero";
 import Proficiencies from "./components/sections/Proficiencies";
 import Projects from "./components/sections/Projects";
-import { projects, proficiencies } from "./data";
 import Contact from "./components/sections/Contact";
+import AboutMe from "./components/sections/AboutMe";
+
+// TODO: use CSS to add dividers between sections
 
 const App = () => {
   return (
@@ -16,9 +18,11 @@ const App = () => {
       <NavBar />
       <Hero />
       <Divider />
-      <Proficiencies proficiencies={proficiencies} />
+      <AboutMe />
       <Divider />
-      <Projects projects={projects} />
+      <Proficiencies />
+      <Divider />
+      <Projects />
       <Divider />
       <Contact />
     </div>

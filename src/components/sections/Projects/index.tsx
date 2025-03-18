@@ -1,13 +1,9 @@
 import styled from "styled-components";
 import { v4 as uuid } from "uuid";
 import ProjectCard from "./ProjectCard";
-import { Project } from "../../../data/projects";
+import { projects } from "../../../data/projects";
 
-type ProjectsProps = {
-  projects: Project[];
-};
-
-const Projects = ({ projects }: ProjectsProps) => {
+const Projects = () => {
   return (
     <Wrapper id="fold_3">
       <InnerWrap>
