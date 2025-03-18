@@ -22,7 +22,7 @@ const GlobalStyles = createGlobalStyle`
     padding: 2rem 4rem 1rem;
     box-sizing: border-box;
     overflow: hidden;
-    @media (min-width:770px) {
+      @media (min-width:900px) {
       padding: 5rem 7rem 1rem;
   }
   }
@@ -34,7 +34,7 @@ h1 {
   text-shadow: -3px 3px 0px #E76A46;
   line-height: 3.5rem;
 
-  @media (min-width:770px) {
+    @media (min-width:900px) {
   font-size: 4rem;
   line-height: 7rem;
 }
@@ -59,7 +59,7 @@ input {
   background-color: inherit;
   padding: 1rem;
   max-width: 350px ;
-  @media (min-width:770px) {
+    @media (min-width:900px) {
   }
 }
 textarea {

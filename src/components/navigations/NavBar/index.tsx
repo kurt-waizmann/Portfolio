@@ -1,16 +1,27 @@
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "../../LanguageSwitcher";
+
+// Define the prop type
+interface CVProps {
+  text: string;
+}
 
 const NavBar = () => {
+  const { t } = useTranslation();
+
   return (
     <Wrapper>
-      <Link href="#fold_2">About</Link>
-      <Link href="#fold_3">Work</Link>
-      <Link href="#fold_4">Contact</Link>
+      <Link href="#fold_2">{t("nav.about")}</Link>
+      <Link href="#fold_3">{t("nav.projects")}</Link>
+      <Link href="#fold_4">{t("nav.contact")}</Link>
+      <LanguageSwitcher />
       <CV
         href="https://drive.google.com/file/d/192-w0SLVz4kNtf_eL_pgIPm_mIBfy5iH/view"
         target="_blank"
         rel="noreferrer"
-      ></CV>
+        text={t("nav.resume")}
+      />
     </Wrapper>
   );
 };
@@ -25,7 +36,7 @@ const Wrapper = styled.nav`
   align-items: center;
   gap: 8rem;
   margin-bottom: 5rem;
-  @media (min-width: 770px) {
+  @media (min-width: 900px) {
     display: flex;
   }
 `;
@@ -55,7 +66,7 @@ const Link = styled.a`
     width: 100%;
   }
 `;
-const CV = styled.a`
+const CV = styled.a<CVProps>`
   position: relative;
   text-decoration: none;
   font-family: "PT Mono";
@@ -64,7 +75,6 @@ const CV = styled.a`
   font-size: 1.6rem;
   line-height: 22px;
   color: #ffffff;
-
   width: 10rem;
   height: 5rem;
   border: 1px solid #ffffff;
@@ -74,13 +84,12 @@ const CV = styled.a`
   align-items: center;
 
   &:after {
-    content: "Resumé";
+    content: "${(props) => props.text}";
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     text-shadow: -1px 1px 0px black;
-
     width: 10rem;
     height: 5rem;
     border: 1px solid #ffffff;

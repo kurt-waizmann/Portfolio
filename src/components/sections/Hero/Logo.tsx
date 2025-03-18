@@ -19,7 +19,7 @@ export default Logo;
 const LogoWrapper = styled.div`
   position: relative;
   margin-bottom: 1rem;
-  @media (min-width: 770px) {
+  @media (min-width: 900px) {
     position: absolute;
     left: 5rem;
     top: 0rem;

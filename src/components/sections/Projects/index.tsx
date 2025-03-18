@@ -40,13 +40,13 @@ const Wrapper = styled.div`
   justify-content: center;
   align-content: center;
   margin: 10rem 0rem;
-  @media (min-width: 770px) {
+  @media (min-width: 900px) {
     min-height: 100vh;
   }
 `;
 const Title = styled.h1`
   text-align: center;
-  @media (min-width: 770px) {
+  @media (min-width: 900px) {
     text-align: left;
   }
 `;
@@ -64,7 +64,7 @@ const ProjWrap = styled.div`
   margin-top: 3rem;
   gap: 4rem;
 
-  @media (min-width: 770px) {
+  @media (min-width: 900px) {
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 105rem;

@@ -92,7 +92,7 @@ const Button = styled.button`
     background-color: #4c5272;
   }
 
-  @media (min-width: 770px) {
+  @media (min-width: 900px) {
     display: none;
   }
 `;

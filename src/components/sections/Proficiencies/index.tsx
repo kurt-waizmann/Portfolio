@@ -49,7 +49,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  @media (min-width: 770px) {
+  @media (min-width: 900px) {
     flex-direction: row;
     align-items: flex-start;
     margin: 18rem 0rem;
@@ -63,7 +63,7 @@ const InnerWrap = styled.div`
   justify-content: center;
   align-items: center;
   max-width: 32rem;
-  @media (min-width: 770px) {
+  @media (min-width: 900px) {
     flex-direction: center;
     align-items: flex-start;
     /* gap: 10rem; */
@@ -73,7 +73,7 @@ const About = styled.h1`
   /* line-height: 4rem; */
 `;
 const Divider = styled.div`
-  @media (min-width: 770px) {
+  @media (min-width: 900px) {
     min-height: 70rem;
     height: 100%;
     border-left: 1px solid white;
@@ -86,7 +86,7 @@ const LangWrap = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 5rem;
-  @media (min-width: 770px) {
+  @media (min-width: 900px) {
     margin-top: 0rem;
     align-items: flex-start;
   }
@@ -136,7 +136,7 @@ const Box = styled.div<{ name: string }>`
   word-wrap: break-word;
   text-align: center;
 
-  @media (min-width: 770px) {
+  @media (min-width: 900px) {
     &:hover {
       transform: translate(0.5rem, -0.5rem);
     }

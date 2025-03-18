@@ -1,15 +1,16 @@
 import styled from "styled-components";
-
+import { useTranslation } from "react-i18next";
 import Montreal from "../../../assets/montreal.svg";
 import Arrow from "../../../assets/arrow.svg";
 
 const FinePrint = () => {
   const currentYear = new Date().getFullYear();
+  const { t } = useTranslation();
   return (
     <Wrapper>
       <div>© {currentYear} Kurt Waizmann</div>
       <MTL>
-        <div>Made in Montreal</div>
+        <div>{t("footer.madeInMontreal")}</div>
         <img src={Montreal} alt="Montreal logo" />
       </MTL>
       <BackTop href="#fold_1">
@@ -34,7 +35,7 @@ const Wrapper = styled.div`
   justify-content: space-between;
   padding: 1rem 2rem 0px;
   opacity: 0.8;
-  @media (min-width: 770px) {
+  @media (min-width: 900px) {
     font-size: 1.5rem;
   }
 `;
@@ -43,7 +44,7 @@ const MTL = styled.div`
   flex-direction: row;
   align-items: center;
   gap: 0.5rem;
-  @media (min-width: 770px) {
+  @media (min-width: 900px) {
     position: relative;
     left: -5rem;
   }

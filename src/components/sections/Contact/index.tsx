@@ -3,13 +3,15 @@ import Smile from "../../../assets/smile.svg";
 import GitHub from "../../../assets/github.svg";
 import LinkedIn from "../../../assets/linkedin.svg";
 import FinePrint from "./FinePrint";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Wrap id="fold_4">
         <div>
-          <Title>Reach Out, Say Hi</Title>
+          <Title>{t("contact.title")}</Title>
           <ContentWrap>
             <TitleWrap>
               <ImgWrap>
@@ -23,20 +25,20 @@ const Contact = () => {
                   type="text"
                   id="name"
                   name="name"
-                  placeholder="Name"
+                  placeholder={t("contact.name")}
                   required
                 />
                 <input
                   type="email"
                   id="email"
                   name="email"
-                  placeholder="E-mail"
+                  placeholder={t("contact.email")}
                   required
                 />
                 <textarea
                   id="message"
                   name="message"
-                  placeholder="Message"
+                  placeholder={t("contact.message")}
                   style={{ height: "200px" }}
                   required
                 />
@@ -57,7 +59,7 @@ const Contact = () => {
                       <Img src={LinkedIn} alt="GitHub Link" />
                     </a>
                   </Links>
-                  <Submit type="submit" value="Send" />
+                  <Submit type="submit" value={t("contact.send")} />
                 </Icons>
               </Form>
             </FormWrap>
@@ -77,12 +79,12 @@ const Wrap = styled.div`
   align-items: center;
   justify-content: center;
   margin: 10rem 0rem 5rem 0rem;
-  @media (min-width: 770px) {
+  @media (min-width: 900px) {
     min-height: 80vh;
   }
 `;
 const TitleWrap = styled.div`
-  @media (min-width: 770px) {
+  @media (min-width: 900px) {
     width: 100%;
   }
 `;
@@ -90,7 +92,7 @@ const Title = styled.h1`
   width: 100%;
   margin-bottom: 6rem;
   text-align: center;
-  @media (min-width: 770px) {
+  @media (min-width: 900px) {
     text-align: left;
   }
 `;
@@ -101,7 +103,7 @@ const ContentWrap = styled.div`
   align-content: center;
   width: 100%;
   gap: 4rem;
-  @media (min-width: 770px) {
+  @media (min-width: 900px) {
     flex-direction: row;
     gap: 8rem;
   }
@@ -118,7 +120,7 @@ const ImgWrap = styled.div`
 const Smiley = styled.img`
   width: 12rem;
   margin: 1rem 0px;
-  @media (min-width: 770px) {
+  @media (min-width: 900px) {
     width: 25rem;
     padding-bottom: 5rem;
   }
@@ -128,7 +130,7 @@ const FormWrap = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  @media (min-width: 770px) {
+  @media (min-width: 900px) {
     width: 100%;
   }
 `;

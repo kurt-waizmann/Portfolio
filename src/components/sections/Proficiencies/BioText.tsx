@@ -28,7 +28,7 @@ export default BioText;
 
 const Wrapper = styled.div`
   margin-top: 1rem;
-  @media (min-width: 770px) {
+  @media (min-width: 900px) {
     margin-top: 2rem;
   }
 `;
@@ -37,7 +37,7 @@ const Details = styled.div`
   font-weight: 300;
   line-height: 2.4rem;
   max-width: 29rem;
-  @media (min-width: 770px) {
+  @media (min-width: 900px) {
     max-width: rem;
   }
 `;

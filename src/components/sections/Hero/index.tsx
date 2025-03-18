@@ -3,28 +3,24 @@ import Portrait from "./Portrait";
 import Zig from "../../../assets/ZigZagOrange.svg";
 import Zag from "../../../assets/ZigZagYellow.svg";
 import Logo from "./Logo";
-import { Profile } from "../../../data/profile";
+import { useTranslation } from "react-i18next";
 
-type HeroProps = {
-  profile: Profile;
-};
-
-const Hero = ({ profile }: HeroProps) => {
-  const { name, job, bio, subtext, email, phone, linkedin } = profile;
+const Hero = () => {
+  const { t } = useTranslation();
   return (
     <Wrapper>
       <ContentWrap>
         <TextWrap>
           <Logo />
           <Title>
-            <Name>{name}</Name>
+            <Name>Kurt Waizmann</Name>
             <Job>
-              <div>{job}</div>
+              <div>{t("hero.job")}</div>
             </Job>
           </Title>
           <Subtext>
-            <p>{bio}</p>
-            <Lookout>{subtext}</Lookout>
+            <p>{t("hero.bio")}</p>
+            <Lookout>{t("hero.subtext")}</Lookout>
           </Subtext>
         </TextWrap>
         <PicWrapper>
@@ -53,7 +49,7 @@ const Wrapper = styled.div`
 const ContentWrap = styled.div`
   border: 1px solid green;
 
-  @media (min-width: 770px) {
+  @media (min-width: 900px) {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -65,7 +61,7 @@ const ContentWrap = styled.div`
 
 const TextWrap = styled.div`
   max-width: 25.7rem;
-  @media (min-width: 770px) {
+  @media (min-width: 900px) {
     max-width: 40rem;
   }
 `;
@@ -78,7 +74,7 @@ const Title = styled.div`
 `;
 const Name = styled.h1`
   display: none;
-  @media (min-width: 770px) {
+  @media (min-width: 900px) {
     display: block;
     color: white;
     margin: 0px;
@@ -89,7 +85,7 @@ const Job = styled.div`
   flex-direction: column;
   text-shadow: -2px 2px 0px #e76a46;
 
-  @media (min-width: 770px) {
+  @media (min-width: 900px) {
     flex-direction: row;
     gap: 0.8rem;
   }
@@ -110,7 +106,7 @@ const ZigZag1 = styled.img`
   position: relative;
   left: 17rem;
   height: 3rem;
-  @media (min-width: 770px) {
+  @media (min-width: 900px) {
     left: 45rem;
     bottom: 8rem;
   }
@@ -120,7 +116,7 @@ const ZigZag2 = styled.img`
   position: relative;
   left: -17rem;
   height: 3rem;
-  @media (min-width: 770px) {
+  @media (min-width: 900px) {
     left: -12rem;
     top: 6rem;
   }

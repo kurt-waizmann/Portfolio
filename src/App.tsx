@@ -5,7 +5,7 @@ import NavBar from "./components/navigations/NavBar";
 import Hero from "./components/sections/Hero";
 import Proficiencies from "./components/sections/Proficiencies";
 import Projects from "./components/sections/Projects";
-import { projects, proficiencies, profile } from "./data";
+import { projects, proficiencies } from "./data";
 import Contact from "./components/sections/Contact";
 
 const App = () => {
@@ -14,7 +14,7 @@ const App = () => {
       <GlobalStyles />
       <MobileNav />
       <NavBar />
-      <Hero profile={profile} />
+      <Hero />
       <Divider />
       <Proficiencies proficiencies={proficiencies} />
       <Divider />

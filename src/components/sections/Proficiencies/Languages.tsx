@@ -60,7 +60,7 @@ const Box = styled.div<{ name: string }>`
   word-wrap: break-word;
   text-align: center;
 
-  @media (min-width: 770px) {
+  @media (min-width: 900px) {
     &:hover {
       transform: translate(0.5rem, -0.5rem);
     }
