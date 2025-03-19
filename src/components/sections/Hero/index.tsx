@@ -4,21 +4,28 @@ import Zig from "../../../assets/ZigZagOrange.svg";
 import Zag from "../../../assets/ZigZagYellow.svg";
 import Logo from "./Logo";
 import { useTranslation } from "react-i18next";
+import { motion } from "motion/react";
+import { slideFadeIn, swirling } from "./animations/animation";
 
 const Hero = () => {
   const { t } = useTranslation();
+  const arr = [...Array(10)];
   return (
     <Wrapper>
       <ContentWrap>
         <TextWrap>
           <Logo />
-          <Title>
-            <Name>Kurt Waizmann</Name>
-            <Job>
-              <div>{t("hero.job")}</div>
-            </Job>
-          </Title>
-          <Subtext>
+          <TitleWrapper>
+            {arr.map((_, i) => (
+              <Title as={motion.h1} {...swirling(i, i * 0.1)} key={i}>
+                <Name>Kurt Waizmann</Name>
+                <Job>
+                  <div>{t("hero.job")}</div>
+                </Job>
+              </Title>
+            ))}
+          </TitleWrapper>
+          <Subtext as={motion.div} {...slideFadeIn}>
             <p>{t("hero.bio")}</p>
             <Lookout>{t("hero.subtext")}</Lookout>
           </Subtext>
@@ -66,12 +73,22 @@ const TextWrap = styled.div`
   }
 `;
 const Title = styled.div`
+  position: absolute;
   color: #4c5272;
   font-size: 4rem;
   font-weight: 700;
   margin-bottom: 1rem;
   line-height: 3.5rem;
 `;
+
+const TitleWrapper = styled.div`
+  position: relative;
+  height: 100px;
+  @media (min-width: 900px) {
+    height: 150px;
+  }
+`;
+
 const Name = styled.h1`
   display: none;
   @media (min-width: 900px) {

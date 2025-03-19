@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import GlobalStyles from "./components/GlobalStyles";
+import GlobalStyles from "./styles/GlobalStyles";
 import MobileNav from "./components/navigations/MobileNav/index";
 import NavBar from "./components/navigations/NavBar";
 import Hero from "./components/sections/Hero";
