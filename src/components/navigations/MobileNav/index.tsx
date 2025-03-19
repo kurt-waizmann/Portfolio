@@ -29,12 +29,12 @@ const MobileNav = () => {
           </Link>
         </Links>
         <Divider />
-        <CV
+        {/* <CV
           href="https://drive.google.com/file/d/192-w0SLVz4kNtf_eL_pgIPm_mIBfy5iH/view"
           target="_blank"
         >
           Resumé
-        </CV>
+        </CV> */}
         <img src={Spiral} alt="spiral decoration" />
       </Nav>
       <Button
@@ -121,6 +121,7 @@ const Nav = styled.nav`
     left: 0;
   }
 `;
+
 const Link = styled.a`
   display: block;
   text-align: center;
@@ -139,23 +140,25 @@ const Links = styled.div`
   display: flex;
   flex-direction: column;
 `;
-const CV = styled.a`
-  color: #4c5272;
-  text-decoration: none;
-  width: 12rem;
-  height: 7rem;
-  border: 2px solid #8b96a7;
-  border-radius: 10px;
-  font-family: "PT Mono";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 2rem;
-  line-height: 42px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 3rem 0px 5rem;
-`;
+
+// const CV = styled.a`
+//   color: #4c5272;
+//   text-decoration: none;
+//   width: 12rem;
+//   height: 7rem;
+//   border: 2px solid #8b96a7;
+//   border-radius: 10px;
+//   font-family: "PT Mono";
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 2rem;
+//   line-height: 42px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   margin: 3rem 0px 5rem;
+// `;
+
 const Divider = styled.hr`
   border-radius: 10px;
   width: 25rem;

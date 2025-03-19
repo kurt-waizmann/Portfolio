@@ -1,16 +1,24 @@
 import styled from "styled-components";
-import BioText from "./BioText";
+import { useTranslation } from "react-i18next";
 
 const AboutMe = () => {
+  const { t } = useTranslation();
+
   return (
     <Wrapper id="fold_2">
       <InnerWrap>
-        <About>About Me</About>
-        <BioText />
+        <About>{t("about.title")}</About>
+        <BioWrapper>
+          <Details>{t("about.bio1")}</Details>
+          <Details style={{ marginTop: "2rem" }}>{t("about.bio2")}</Details>
+          <Details style={{ marginTop: "2rem" }}>{t("about.bio3")}</Details>
+        </BioWrapper>
       </InnerWrap>
       <InnerWrap>
         <About>Certifications and whatnot</About>
-        <BioText />
+        <Details>{t("about.bio1")}</Details>
+        <Details style={{ marginTop: "2rem" }}>{t("about.bio2")}</Details>
+        <Details style={{ marginTop: "2rem" }}>{t("about.bio3")}</Details>{" "}
       </InnerWrap>
     </Wrapper>
   );
@@ -38,8 +46,8 @@ const InnerWrap = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 32rem;
   border: 1px solid red;
+  flex: 1;
   @media (min-width: 900px) {
     flex-direction: center;
     align-items: flex-start;
@@ -48,4 +56,20 @@ const InnerWrap = styled.div`
 `;
 const About = styled.h1`
   /* line-height: 4rem; */
+`;
+
+const BioWrapper = styled.div`
+  margin-top: 1rem;
+  @media (min-width: 900px) {
+    margin-top: 2rem;
+  }
+`;
+const Details = styled.div`
+  font-size: 1.7rem;
+  font-weight: 300;
+  line-height: 2.4rem;
+  max-width: 29rem;
+  @media (min-width: 900px) {
+    max-width: rem;
+  }
 `;

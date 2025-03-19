@@ -13,7 +13,9 @@
   },
   "about": {
     "title": "À propos de moi",
-    "description": "Je suis un développeur frontend passionné avec de l'expérience en React, TypeScript et technologies web modernes."
+    "bio1": "Ma passion pour la narration m'a conduit à l'École de cinéma Mel Hoppenheim, où j'ai étudié la production cinématographique. Là-bas, j'ai écrit et réalisé mes propres projets et j'ai même participé activement au processus de post-production en tant que concepteur sonore. Aujourd'hui, j'espère appliquer les précieuses leçons que j'ai apprises à mon parcours en développement web.",
+    "bio2": "J'ai suivi une formation en développement full stack, spécialisée dans la stack MERN. Personnellement, je penche davantage vers le développement front-end. Je travaille souvent avec React.js et j’ai également une affection particulière pour le CSS.",
+    "bio3": "Peu importe où je me retrouverai ensuite, je suis enthousiaste à l'idée de franchir de nouvelles étapes dans mon parcours, de collaborer avec les personnes que je rencontrerai en chemin et d'explorer le potentiel infini des nouvelles technologies web."
   },
   "projects": {
     "title": "Mes Projets",

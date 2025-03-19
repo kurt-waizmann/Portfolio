@@ -1,14 +1,13 @@
 import After from "../assets/after.png";
-import BodyBreak from "../assets/bodybreak.png";
-import FoodIdeas from "../assets/foodideas.png";
+import i18next from "i18next";
 
 export type Project = {
   name: string;
   pic: string;
-  github: string;
+  github?: string;
   website?: string;
   tech: string[];
-  detail: string;
+  description: string;
 };
 
 export const projects: Project[] = [
@@ -18,25 +17,43 @@ export const projects: Project[] = [
     github: "https://github.com/kurt-waizmann/After",
     website: "https://jointheafter.life/",
     tech: ["react", "javascript", "framer-motion"],
-    detail:
+    description:
       "An experiment in contextual storytelling for a fictional corporation and service. Includes various animation styles, an original video and writing.",
   },
   {
-    name: "Body Break",
-    pic: BodyBreak,
-    github: "https://github.com/kurt-waizmann/Body-Break",
-    website: "",
-    tech: ["react", "javascript", "node.js", "mongodb", "express.js"],
-    detail:
-      "E-commerce website for sportswear products. Includes predictive searches, responsive shopping cart, RESTful APIs, and a database.",
+    name: "Air France Corporate",
+    pic: After,
+    website: "https://corporate.airfrance.com/",
+    tech: ["react", "javascript", "framer-motion"],
+    description:
+      "An experiment in contextual storytelling for a fictional corporation and service. Includes various animation styles, an original video and writing.",
   },
   {
-    name: "Gimme Food!",
-    pic: FoodIdeas,
-    github: "https://github.com/kurt-waizmann/Make-a-Meal",
-    website: "",
-    tech: ["react", "javascript"],
-    detail:
-      "App (under development) that suggects meal ideas. Takes from an API to supply the user with a random recipe for a meal.",
+    name: "Satisfaction",
+    pic: After,
+    tech: ["react", "javascript", "framer-motion"],
+    description: i18next.t("hero.bio"),
+  },
+  {
+    name: "Internal Component Library",
+    pic: After,
+    tech: ["react", "javascript", "framer-motion"],
+    description:
+      "An experiment in contextual storytelling for a fictional corporation and service. Includes various animation styles, an original video and writing.",
+  },
+  {
+    name: "Alithya CMS Template",
+    pic: After,
+    website: "https://www.paradedesjouets.ca/",
+    tech: ["react", "javascript", "framer-motion"],
+    description:
+      "An experiment in contextual storytelling for a fictional corporation and service. Includes various animation styles, an original video and writing.",
+  },
+  {
+    name: "AGA intranet",
+    pic: After,
+    tech: ["react", "javascript", "framer-motion"],
+    description:
+      "An experiment in contextual storytelling for a fictional corporation and service. Includes various animation styles, an original video and writing.",
   },
 ];

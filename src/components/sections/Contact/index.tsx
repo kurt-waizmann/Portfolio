@@ -11,9 +11,9 @@ const Contact = () => {
     <>
       <Wrap id="fold_4">
         <div>
-          <Title>{t("contact.title")}</Title>
           <ContentWrap>
             <TitleWrap>
+              <Title>{t("contact.title")}</Title>
               <ImgWrap>
                 <Smiley src={Smile} alt="smiley face" />
               </ImgWrap>
@@ -84,12 +84,15 @@ const Wrap = styled.div`
   }
 `;
 const TitleWrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   @media (min-width: 900px) {
     width: 100%;
   }
 `;
 const Title = styled.h1`
-  width: 100%;
   margin-bottom: 6rem;
   text-align: center;
   @media (min-width: 900px) {

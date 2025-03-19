@@ -11,7 +11,7 @@ const ProjectCard = ({
   github,
   website,
   tech,
-  detail,
+  description,
 }: ProjectProps) => {
   return (
     <Box>
@@ -20,30 +20,30 @@ const ProjectCard = ({
         <Header>
           <Title>{name}</Title>
           <Links>
-            {Boolean(website) === true && (
-              <>
-                <a
-                  href={website}
-                  style={{ display: "flex" }}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Sites src={Link} alt="website link" />
-                </a>
-              </>
-            )}
-            <a
-              href={github}
-              style={{ display: "flex" }}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Sites src={GitLink} alt="github link" />
-            </a>
+            {Boolean(github) ? (
+              <a
+                href={github}
+                style={{ display: "flex" }}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Sites src={GitLink} alt="github link" />
+              </a>
+            ) : null}
+            {Boolean(website) ? (
+              <a
+                href={website}
+                style={{ display: "flex" }}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Sites src={Link} alt="website link" />
+              </a>
+            ) : null}
           </Links>
         </Header>
         <TechBox tech={tech} />
-        <Desc>{detail}</Desc>
+        <Desc>{description}</Desc>
       </Wrapper>
     </Box>
   );

@@ -18,7 +18,7 @@ const Projects = () => {
                 github={project.github}
                 website={project.website}
                 tech={project.tech}
-                detail={project.detail}
+                description={project.description}
               />
             );
           })}
