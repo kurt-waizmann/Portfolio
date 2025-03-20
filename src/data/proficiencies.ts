@@ -1,6 +1,7 @@
 import { IconType } from "react-icons";
 import { FaGit } from "react-icons/fa";
 import {
+  IoLogoAngular,
   IoLogoCss3,
   IoLogoHtml5,
   IoLogoJavascript,
@@ -79,6 +80,11 @@ const frontend: Proficiency[] = [
   {
     name: "React",
     icon: IoLogoReact,
+    category: Frontend.Frameworks,
+  },
+  {
+    name: "Angular",
+    icon: IoLogoAngular,
     category: Frontend.Frameworks,
   },
   {
