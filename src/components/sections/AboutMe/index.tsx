@@ -68,8 +68,4 @@ const Details = styled.div`
   font-size: 1.7rem;
   font-weight: 300;
   line-height: 2.4rem;
-  max-width: 29rem;
-  @media (min-width: 900px) {
-    max-width: rem;
-  }
 `;
